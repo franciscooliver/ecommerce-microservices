@@ -1,0 +1,38 @@
+POST http://localhost:8080/category  HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Category 2"
+}
+###
+GET http://localhost:8080/category/6b4c28f4-6831-495a-9444-19c93452faa3 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+GET http://localhost:8080/category HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+### PRODUTO
+POST http://localhost:8080/product  HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+    "name": "Product 2",
+    "description": "Category 2 description",
+    "price": 150,
+    "category_id": "26dd66bf-0ffd-4a8b-b152-2bf002fc3cc5",
+    "image_url": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5530/media-gallery/gray/non-touch/coral/notebook-laptop-g15-5530-gray-gallery-1-v2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=554&qlt=100,1&resMode=sharp2&size=554,402&chrss=full"
+}
+###
+GET http://localhost:8080/product/category/7c0ca0d4-ff23-4bd7-b131-c563067c4b43 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+GET http://localhost:8080/product/61c176d5-f4f9-4fbd-a892-41058422868e HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json

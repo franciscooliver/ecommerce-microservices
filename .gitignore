@@ -1,0 +1,10 @@
+/nestjs-api/dist
+/nestjs-api/node_modules
+/nestjs-api/.docker
+/nestjs-api/.vscode/*
+
+/next-frontend/.idea/*
+/next-frontend/.vscode/*
+/next-frontend/node_modules
+
+/payment-service/.docker

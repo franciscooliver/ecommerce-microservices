@@ -1,0 +1,64 @@
+POST http://localhost:3000/auth/login HTTP/1.1
+Host: localhost
+Content-Type: application/json
+
+{
+    "username": "john",
+    "password": "john"    
+}
+
+
+###
+GET http://localhost:3000/products HTTP/1.1
+Host: localhost
+Content-Type: application/json
+
+###
+POST http://localhost:3000/products HTTP/1.1
+Host: localhost
+Content-Type: application/json
+
+{
+    "name": "Product 2",
+    "description": "Product 12 description",
+    "image_url": "https://samsungbrshop.vtexassets.com/arquivos/ids/227320-800-auto?v=638405123234970000&width=800&height=auto&aspect=true",
+    "price": 250
+}
+
+###
+GET http://localhost:3000/products/f9ac195d-a94c-4f0a-ac1c-04333661685f HTTP/1.1
+Host: localhost
+Content-Type: application/json
+
+###
+GET http://localhost:3000/orders HTTP/1.1
+Host: localhost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzI2MTgxMCwiZXhwIjoxNzA3MjYxODcwfQ.QB8-l1-QXzCcaSriKne7io8YS3jUSQ91yRhJAl8Pck4
+
+###
+GET http://localhost:3000/orders/7faad7bc-5267-41b4-b0fc-110d2720ce87 HTTP/1.1
+Host: localhost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzI2MTc2NCwiZXhwIjoxNzA3MjYxODI0fQ.6Er0a5nTaMyxy0m44Z5es08JHXmrbfV0zKPCMJlADNA
+
+
+### 
+POST http://localhost:3000/orders HTTP/1.1
+Host: localhost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzQzMjU1OCwiZXhwIjoxNzA3NDMyNjE4fQ.iodv746xJPq5VP89Q-Eu5Pvxw2v6NdaZPEAcXRXFKeo
+
+{
+    "items": [
+        {
+            "product_id": "04c4353a-3f6d-4272-a8f2-44b82c05ecc0",
+            "quantity": 2
+        },
+        {
+            "product_id": "0afa7630-4fc1-4d69-beed-4f8f15becadc",
+            "quantity": 1
+        }
+    ],
+    "card_hash": "jgrrruigd856jjdfioer654r87r7e7rw8"
+}
