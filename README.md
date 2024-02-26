@@ -19,6 +19,6 @@ To run each of the services, read their respective README
 ```bash
   /go-catalog/README.md
   /nestjs-api/README.md
-  /next-frontend/README.md
+  /next-app/README.md
   /payment-service/README.md
 ```

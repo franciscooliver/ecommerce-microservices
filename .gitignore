@@ -3,8 +3,8 @@
 /nestjs-api/.docker
 /nestjs-api/.vscode/*
 
-/next-frontend/.idea/*
-/next-frontend/.vscode/*
-/next-frontend/node_modules
+/next-app/.idea/*
+/next-app/.vscode/*
+/next-app/node_modules
 
 /payment-service/.docker
